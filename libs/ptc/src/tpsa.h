@@ -11,7 +11,7 @@
 //! \version $Id: tpsa.h,v 1.4 2009-04-17 17:32:23 frs Exp $
 //! \author Lingyun Yang, http://www.lingyunyang.com/
 
-#ifndef WIN32
+#if 1
 
 /* should work unchanged on _win32 using Lahey */
 #define ad_print      ad_print_

@@ -43,8 +43,11 @@ list(REMOVE_ITEM src_files ${remove_list})
 # header files...
 file(GLOB headerfiles *.h)
 
+add_definitions(-D_CRT_SECURE_NO_WARNINGS)
+
+
 # adding library:
-add_library(madx ${src_files})
+add_library(madx ${src_files} madx.def)
 
 target_link_libraries(madx ptc)
 

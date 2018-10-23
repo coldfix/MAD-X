@@ -18,6 +18,7 @@ if(CMAKE_Fortran_COMPILER_ID STREQUAL "GNU" AND
     set_source_files_properties(l_complex_taylor.f90 COMPILE_FLAGS "-O2")
 endif()
 
+add_definitions(-DMSVC_DLL)
 
 add_library(ptc STATIC ${src_files})
 
